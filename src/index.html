@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/reset.scss">
+    <link rel="stylesheet" href="./styles/style.scss">
+
     <title>Let It Drink!</title>
 </head>
 <body>
-    
+<header class="header">
+    <div class="header-logo">
+        <a href="./">
+            <img class="header-logo__image" src="./assets/img/header_logo.png" alt="logo">
+        </a>
+    </div>
+    <nav class="header-navigation">
+        <a class="header-navigation__item" href="./">Home</a>
+        <a class="header-navigation__item" href="./">Features</a>
+        <a class="header-navigation__item" href="./">Premium</a>
+        <a class="header-navigation__item" href="./">Team</a>
+        <a class="header-navigation__item" href="./">Contact</a>
+    </nav>
+</header>
+<main class="main">
+    <div class="main-background">
+        <img class="main-background__item" src="./assets/img/rectangle_1.png" alt="background">
+    </div>
+    <img class="main-background__beer" src="./assets/img/main_logo.png" alt="logo" >
+    <div class="main-tagline__day">EVERY <span class="main-tagline__lastWordDay">DAY</span></div>
+    <div class="main-tagline__night">EVERY <span class="main-tagline__lastWordNight">NIGHT</span></div>
+    <div class="main-tagline__title">LET IT DRINK</div>
+    <div class="main-download">
+        <a class="main-download__link" href="./"><img src="./assets/img/button_app.png" alt="Download on the App Store"></a>
+        <a class="main-download__link" href="./"><img src="./assets/img/button_google.png" alt="Get in on Google Play"></a>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__copyright">Let It Drink © 2022</div>
+</footer>
 </body>
 </html>
