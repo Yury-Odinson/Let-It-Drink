@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    margin: auto 0;
+    margin: auto ;
     justify-content: space-between;
     max-width: 1920px;
     box-shadow: 0 10px 10px rgba(71, 71, 71, 0.4);
@@ -18,21 +18,34 @@
         margin: auto 50px;
     }
 
+    &-navigation__image {
+        display: none;
+    }
+
     &-navigation__item {
         padding: 40px;
         font-size: 2.4rem;
         cursor: pointer;
+    }
+    &-navigation__itemJoin {
+        display: none;
     }
 }
 
 .main {
     position: relative;
     max-width: 1920px;
-    height: 980px;
+    // height: 980px;
+    margin: auto;
 
     &-background__item {
         position: absolute;
         right: 0;
+        height: 100vh;
+    }
+    
+    &-background__item2 {
+        display: none;
     }
 
     &-background__beer {
@@ -40,6 +53,15 @@
         top: 15%;
         left: 50%;
         transform: translate(-50%);
+    }
+
+    &__motto {
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        z-index: 1;
+        font-size: 2.7rem;
+        color: rgba(71, 71, 71, 0.4)
     }
 
     &-tagline__day,
@@ -56,6 +78,8 @@
         left: 5%;
         width: 450px;
         color: #F4C734;
+        font-size: 9.8rem;
+        -webkit-text-stroke: .3rem white;
     }
 
     &-tagline__night {
@@ -79,6 +103,11 @@
         padding-left: 100px;
     }
 
+    &-tagline__mobile,
+    &-tagline__mobile2 {
+        display: none;
+    }
+
     &-download {
         position: absolute;
         top: 90%;
@@ -88,19 +117,5 @@
 
     &-download__link {
         margin: 0 50px;
-        // padding: 0 50px;
-    }
-}
-
-.footer {
-    max-width: 1920px;
-    display: flex;
-    flex: 0 0 auto;
-
-    &__copyright {
-        margin: 0 auto;
-        padding: 40px 0;
-        font-size: 1.2rem;
-        color: #6b6b6b7c;
     }
 }

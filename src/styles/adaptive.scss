@@ -1,0 +1,297 @@
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    .header {
+        max-width: 1440px;
+    }
+
+    .main {
+        position: relative;
+        max-width: 1440px;
+        height: 900px;
+
+        &-background__item {
+            width: 900px;
+            // height: 100vh;
+        }
+    
+        &-background__beer {
+            width: 256px;
+            height: 256px;
+        }
+
+        &__motto {
+            font-size: 2rem;
+            z-index: 1;
+        }
+    
+        &-tagline__day,
+        &-tagline__night,
+        &-tagline__title {
+            font-size: 6.4rem;
+        }
+    
+        &-tagline__day {
+            left: 15%;
+        }
+    
+        &-tagline__night {
+            right: 0;
+            max-width: 350px;
+        }
+    
+        &-tagline__title {
+            top: 50%;
+        }
+    
+        &-tagline__lastWordDay {
+            padding-left: 150px;
+        }
+    
+        &-tagline__lastWordNight {
+            padding-left: 50px;
+        }
+    
+        &-download {
+            display: flex;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    
+        &-download__link {
+            margin: 0 50px;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .header {
+        max-width: 1024px;
+
+        &-logo {
+            margin: auto 16px;
+            padding: 0 20px;
+            cursor: pointer;
+        }
+    
+        &-navigation {
+            display: flex;
+            margin: auto 16px;
+        }
+
+        &-navigation__item {
+            padding: 26px;
+            font-size: 2.4rem;
+            cursor: pointer;
+        }
+    }
+
+    .main {
+        position: relative;
+        max-width: 1024px;
+
+        &-background__item {
+            width: 700px;
+            height: 100vh;
+        }
+    
+        &-background__beer {
+            width: 256px;
+            height: 256px;
+        }
+
+        &__motto {
+            top: 10%;
+            font-size: 1.5rem;
+            z-index: 1;
+        }
+    
+        &-tagline__day,
+        &-tagline__night,
+        &-tagline__title {
+            font-size: 6.4rem;
+        }
+    
+        &-tagline__day {
+            left: 5%;
+            max-width: 300px;
+        }
+    
+        &-tagline__night {
+            right: 5%;
+            max-width: 300px;
+        }
+    
+        &-tagline__title {
+            top: 55%;
+            width: 600px;
+            text-align: center;
+        }
+    
+        &-tagline__lastWordDay {
+            padding-left: 150px;
+        }
+    
+        &-tagline__lastWordNight {
+            padding-left: 50px;
+        }
+    
+        &-download {
+            display: flex;
+            padding-top: 60px;
+            max-width: 700px;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    
+        &-download__link {
+            margin: 0 20px;
+            padding: 0;
+        }
+    }
+    
+}
+
+@media (min-width: 440px) and (max-width: 768px) {
+
+    .header {
+        // max-width: 768px;
+            width: 100%;
+        position: fixed;
+        bottom: 0;
+        box-shadow: 0 -10px 10px rgba(71, 71, 71, 0.4);
+
+        &-logo {
+            display: none;
+        }
+
+        &-navigation {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            margin: 0 auto;
+            padding: 0px;
+        }
+
+        &-navigation__image {
+            display: block;
+            width: 36px;
+            height: 36px;
+            margin: 10px;
+        }
+
+        &-navigation__imageJoin {
+            display: block;
+            width: 56px;
+            height: 56px;
+            margin: 10px;
+            margin-top: 0;
+        }
+
+        &-navigation__item {
+            padding: 20px 0;
+            font-size: 1.6rem;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        &-navigation__itemJoin {
+            display: block;
+            color: #F4C734;
+        }
+    }
+
+    .main {
+
+        max-width: 768px;
+        &-background__item {
+            display: none;
+        }
+
+        &-background__item {
+            display: none;
+        }
+        
+        &-background__item2 {
+            display: block;
+            position: absolute;
+            bottom: 20%;
+            // transform: translateY(-50%);
+            left: 50%;
+            transform: translatex(-50%);
+        }
+
+        &-background__beer {
+            width: 196px;
+            height: 196px;
+            top: 35%;
+            transform: translate(-50%);
+        }
+
+        &__motto {
+            display: none;
+        }
+
+        &-tagline__mobile,
+        &-tagline__mobile2 {
+        display: block;
+        }
+
+        &-tagline__title {
+            position: static;
+            transform: translate(0);
+            max-width: 500px;
+            margin: auto;
+            padding-top: 540px;
+            font-size: 6.4rem;
+        }
+
+        &-tagline__mobile {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%);
+            max-width: 300px;
+            font-size: 3.6rem;
+            font-weight: 700;
+            text-align: center;
+            color: #FFF;
+        }
+
+        &-tagline__mobile2 {
+            position: absolute;
+            left: 50%;
+            padding-top: 30px;
+            color: rgba(0, 0, 0, 0.4);
+            transform: translate(-50%);
+            font-size: 1.4rem;
+        }
+
+
+        &-tagline__day,
+        &-tagline__night {
+            display: none;
+        }
+
+        &-download {
+            position: static;
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto;
+            padding: 70px 0;
+            max-width: 500px;
+            transform: translate(0);
+        }
+
+        &-download__link {
+
+            margin: 0 auto;
+        }
+
+
+
+    }
+
+}
